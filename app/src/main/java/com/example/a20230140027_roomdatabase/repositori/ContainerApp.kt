@@ -7,3 +7,11 @@ import com.example.a20230140027_roomdatabase.room.DatabaseSiswa
 interface  ContainerApp{
     val repositoriSiswa : RepositoriSiswa
 }
+
+class ContainerDataApp(private val  context: Context):
+        ContainerApp {
+            override val repositoriSiswa: RepositoriSiswa by lazy {
+                OffLineRepositoriSiswa(
+                    DatabaseSiswa.getDatabase(context).siswaDao())
+            }
+        }
