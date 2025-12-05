@@ -30,7 +30,10 @@ object PenyediaViewModel {
         }
 
         initializer {
-            EditViewModel(this.createSavedStateHandle(), aplikasiSiswa().container.repositoriSiswa)
+            EditViewModel(
+                createSavedStateHandle(),
+                aplikasiSiswa().container.repositoriSiswa
+            )
         }
     }
 }
