@@ -22,7 +22,7 @@ fun SiswaTopAppBar(
     scrollBehavior: TopAppBarScrollBehavior? = null,
     navigateUp: () -> Unit = {}
 ) {
-    CenterAlignedTopAppBar(title = { Text("DETAIL MAHASISWA") },
+    CenterAlignedTopAppBar(title = { Text("DATA SISWA") },
         modifier = modifier,
         scrollBehavior = scrollBehavior,
         navigationIcon = {
